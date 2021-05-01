@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WeatherApp extends StatelessWidget {
   @override
@@ -20,11 +21,14 @@ class WeatherApp extends StatelessWidget {
         actions: [
           Container(
             margin: EdgeInsets.fromLTRB(0, 0, 20, 0),
-            child: SvgPicture.asset(
-              'asstes/menu.svg',
-              height: 30.0,
-              width: 30.0,
-              color: Colors.white,
+            child: GestureDetector(
+              onTap: () => print("Menue is clicked"),
+              child: SvgPicture.asset(
+                'asstes/menu.svg',
+                height: 30.0,
+                width: 30.0,
+                color: Colors.white,
+              ),
             ),
           ),
         ],
@@ -39,6 +43,13 @@ class WeatherApp extends StatelessWidget {
               height: double.infinity,
               width: double.infinity,
             ),
+            Container(
+              child: Text(
+                'Rajshahi',
+                style: GoogleFonts.lato(
+                    fontSize: 35.0, fontWeight: FontWeight.bold),
+              ),
+            )
           ],
         ),
       ),
