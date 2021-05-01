@@ -1,64 +1,64 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+void main() => runApp(
+      MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: "Weather",
+        home: MyApp(),
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
-  }
-}
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
+class MyApp extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MyAppState createState() => _MyAppState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+      body: Column(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            color: Color(0xfff1f1f1),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Location",
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: 10,
+                    bottom: 10,
+                  ),
+                  child: Text(
+                    "Tem",
+                    style: TextStyle(
+                      color: Colors.deepPurpleAccent,
+                      fontWeight: FontWeight.w300,
+                      fontSize: 40.0,
+                    ),
+                  ),
+                ),
+                Text(
+                  "High of temp, low of temp",
+                  style: TextStyle(
+                    color: Color(0xff9e9e9e),
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.w600,
+                  ),
+                )
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+          )
+        ],
       ),
     );
   }
