@@ -12,6 +12,7 @@ class WeatherApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         centerTitle: true,
         leading: IconButton(
+          onPressed: () {},
           icon: Icon(
             Icons.search,
             size: 30,
@@ -44,12 +45,28 @@ class WeatherApp extends StatelessWidget {
               width: double.infinity,
             ),
             Container(
-              child: Text(
-                'Rajshahi',
-                style: GoogleFonts.lato(
-                    fontSize: 35.0, fontWeight: FontWeight.bold),
+              decoration: BoxDecoration(
+                color: Colors.black45,
               ),
-            )
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 120,
+                  ),
+                  Text(
+                    'Rajshahi',
+                    style: GoogleFonts.lato(
+                      fontSize: 35.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
