@@ -28,9 +28,7 @@ class WeatherApp extends StatelessWidget {
             ),
           ),
         ],
-        title: Text(
-          "Weather",
-        ),
+        elevation: 0.0,
       ),
       body: Container(
         child: Stack(
