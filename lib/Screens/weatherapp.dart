@@ -14,10 +14,12 @@ class WeatherApp extends StatelessWidget {
       ),
       body: Container(
         child: Center(
-          child: Text("Weather",
-              style: GoogleFonts.lato(
-                fontSize: 24,
-              )),
+          child: Text(
+            "Weather",
+            style: GoogleFonts.montserrat(
+              fontSize: 24,
+            ),
+          ),
         ),
       ),
     );
