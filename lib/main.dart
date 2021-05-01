@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(
@@ -54,8 +55,43 @@ class _MyAppState extends State<MyApp> {
                     fontSize: 14.0,
                     fontWeight: FontWeight.w600,
                   ),
-                )
+                ),
               ],
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.all(20.0),
+              child: ListView(
+                children: [
+                  ListTile(
+                    leading: Column(
+                      //mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.thermostat_outlined,
+                          color: Colors.deepPurpleAccent,
+                        ),
+                      ],
+                    ),
+                    title: Text(
+                      "Tempareture",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    subtitle: Text(
+                      "Subtitle",
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xff9e9e9e),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
