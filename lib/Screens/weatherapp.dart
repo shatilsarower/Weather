@@ -52,51 +52,96 @@ class WeatherApp extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(20),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
-                        height: 120,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 120,
+                          ),
+                          Text(
+                            'Rajshahi',
+                            style: GoogleFonts.lato(
+                              fontSize: 35.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text(
+                            "hi",
+                            style: GoogleFonts.lato(
+                              fontSize: 22.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
                       ),
-                      Text(
-                        'Rajshahi',
-                        style: GoogleFonts.lato(
-                          fontSize: 35.0,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        "hi",
-                        style: GoogleFonts.lato(
-                          fontSize: 22.0,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
+                      Column(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Rajshahi',
+                                style: GoogleFonts.lato(
+                                  fontSize: 35.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                "hi",
+                                style: GoogleFonts.lato(
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ],
                   ),
                   Column(
                     children: [
-                      Text(
-                        'Rajshahi',
-                        style: GoogleFonts.lato(
-                          fontSize: 35.0,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 40),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                      Text(
-                        "hi",
-                        style: GoogleFonts.lato(
-                          fontSize: 22.0,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
+                      Row(
+                        children: [
+                          Text(
+                            'Rajshahi',
+                            style: GoogleFonts.lato(
+                              fontSize: 35.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text(
+                            "hi",
+                            style: GoogleFonts.lato(
+                              fontSize: 22.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      )
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
