@@ -64,7 +64,7 @@ class WeatherApp extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             SizedBox(
-                              height: 120,
+                              height: 150,
                             ),
                             Text(
                               'Rajshahi',
@@ -74,11 +74,14 @@ class WeatherApp extends StatelessWidget {
                                 color: Colors.white,
                               ),
                             ),
+                            SizedBox(
+                              height: 5,
+                            ),
                             Text(
-                              "hi",
+                              "08:29 PM - Friday, 4 May 2021",
                               style: GoogleFonts.lato(
-                                fontSize: 22.0,
-                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w400,
                                 color: Colors.white,
                               ),
                             ),
@@ -101,10 +104,10 @@ class WeatherApp extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  "hi",
+                                  "08:29 PM - Friday, 4 May 2021",
                                   style: GoogleFonts.lato(
-                                    fontSize: 22.0,
-                                    fontWeight: FontWeight.bold,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w400,
                                     color: Colors.white,
                                   ),
                                 ),
