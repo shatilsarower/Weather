@@ -80,7 +80,7 @@ class WeatherApp extends StatelessWidget {
                   Column(
                     children: [
                       Text(
-                        'Rajshahi',
+                        'Rajshahy',
                         style: GoogleFonts.lato(
                           fontSize: 35.0,
                           fontWeight: FontWeight.bold,
