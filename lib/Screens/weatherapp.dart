@@ -96,20 +96,30 @@ class WeatherApp extends StatelessWidget {
                                   height: 10,
                                 ),
                                 Text(
-                                  'Rajshahi',
+                                  '42\u2103',
                                   style: GoogleFonts.lato(
-                                    fontSize: 35.0,
-                                    fontWeight: FontWeight.bold,
+                                    fontSize: 85,
+                                    fontWeight: FontWeight.w300,
                                     color: Colors.white,
                                   ),
                                 ),
-                                Text(
-                                  "08:29 PM - Friday, 4 May 2021",
-                                  style: GoogleFonts.lato(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w400,
-                                    color: Colors.white,
-                                  ),
+                                Row(
+                                  children: [
+                                    SvgPicture.asset(
+                                      'asstes/moon.svg',
+                                      height: 35,
+                                      width: 35,
+                                      color: Colors.white,
+                                    ),
+                                    Text(
+                                      "08:29 PM - Friday, 4 May 2021",
+                                      style: GoogleFonts.lato(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w400,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
@@ -133,7 +143,7 @@ class WeatherApp extends StatelessWidget {
                           Text(
                             'Rajshahi',
                             style: GoogleFonts.lato(
-                              fontSize: 35.0,
+                              fontSize: 35,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
