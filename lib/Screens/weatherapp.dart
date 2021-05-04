@@ -57,6 +57,7 @@ class WeatherApp extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
@@ -111,11 +112,14 @@ class WeatherApp extends StatelessWidget {
                                       width: 35,
                                       color: Colors.white,
                                     ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
                                     Text(
-                                      "08:29 PM - Friday, 4 May 2021",
+                                      "Night",
                                       style: GoogleFonts.lato(
                                         fontSize: 15,
-                                        fontWeight: FontWeight.w400,
+                                        fontWeight: FontWeight.w500,
                                         color: Colors.white,
                                       ),
                                     ),
